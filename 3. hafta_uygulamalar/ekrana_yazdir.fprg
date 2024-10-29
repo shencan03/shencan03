@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ekrana_yazdir"/>
+        <attribute name="authors" value="shenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 02:33:54 &#214;S"/>
+        <attribute name="created" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMjoyODoxOCDDllM7MjU3OQ=="/>
+        <attribute name="edited" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMjozMzo1NCDDllM7MTsyNjgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mesaj" type="String" array="False" size=""/>
+            <declare name="mesajAdet, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ekrana yazilmasini istediginiz mesaji giriniz:&quot;" newline="True"/>
+            <input variable="mesaj"/>
+            <output expression="&quot;Mesajin kac kere ekrana yazilmasini istediginizi giriniz:&quot;" newline="True"/>
+            <input variable="mesajAdet"/>
+            <for variable="x" start="1" end="mesajAdet" direction="inc" step="1">
+                <output expression="mesaj" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

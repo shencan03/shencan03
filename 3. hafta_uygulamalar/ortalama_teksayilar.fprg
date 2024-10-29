@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ortalama_teksayilar"/>
+        <attribute name="authors" value="shenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 02:39:03 &#214;S"/>
+        <attribute name="created" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMToyNjoyOCDDllM7MjU3Nw=="/>
+        <attribute name="edited" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMjozOTowMyDDllM7MzsyNjg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sayilar, totalsayilar" type="Integer" array="False" size=""/>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <assign variable="ortalama" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <assign variable="sayilar" expression="0"/>
+            <assign variable="totalsayilar" expression="0"/>
+            <output expression="&quot;Girilen TEK sayilarin ortalamasi alinacaktir, programi bitirmek icin 0 giriniz. Sayi giriniz: &quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n != 0">
+                <if expression="(n % 2) != 0">
+                    <then>
+                        <assign variable="totalsayilar" expression="totalsayilar + 1"/>
+                        <assign variable="sayilar" expression="sayilar + n"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Sayi giriniz: &quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <assign variable="ortalama" expression="sayilar / totalsayilar"/>
+            <output expression="&quot;Girilen tek sayilarin ortalamasi: &quot; &amp; ortalama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

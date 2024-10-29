@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="defter_silgi_fiyat"/>
+        <attribute name="authors" value="shenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 02:28:15 &#214;S"/>
+        <attribute name="created" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMjowNToyNiDDllM7MjU3Mw=="/>
+        <attribute name="edited" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMjoyODoxNSDDllM7MjsyNjg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kalemFiyat, defterFiyat, silgiFiyat, silgiAdet, defterAdet, kalemAdet" type="Integer" array="False" size=""/>
+            <assign variable="defterFiyat" expression="20"/>
+            <assign variable="silgiFiyat" expression="5"/>
+            <assign variable="kalemFiyat" expression="10"/>
+            <output expression="&quot;Defter fiyati 20TL, silgi fiyati 5TL, kalem fiyati 10TL&quot;" newline="True"/>
+            <output expression="&quot;Almak istenen defter adeti giriniz: &quot;" newline="True"/>
+            <input variable="defterAdet"/>
+            <output expression="&quot;Almak istenen silgi adeti giriniz: &quot;" newline="True"/>
+            <input variable="silgiAdet"/>
+            <output expression="&quot;Almak istenen kalem adeti giriniz: &quot;" newline="True"/>
+            <input variable="kalemAdet"/>
+            <output expression="&quot;Borcunuz &quot; &amp; (defterFiyat*defterAdet + silgiAdet*silgiFiyat + kalemFiyat*kalemAdet)&amp; &quot;TL&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

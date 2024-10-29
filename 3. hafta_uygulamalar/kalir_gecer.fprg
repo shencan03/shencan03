@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kalir_gecer"/>
+        <attribute name="authors" value="shenc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 01:58:23 &#214;S"/>
+        <attribute name="created" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMTo1MDozNCDDllM7MjU3MQ=="/>
+        <attribute name="edited" value="c2hlbmM7U09CUklFVFk7MjAyNC0xMC0yOTswMTo1ODoyMyDDllM7MTsyNjg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ortalama" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vize ve finalden aldiginiz notlara gore gecip gecmedinizi ogreneceksiniz.&quot;" newline="True"/>
+            <output expression="&quot;Vize notunuzu giriniz: &quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final notunuzu giriniz: &quot;" newline="True"/>
+            <input variable="final"/>
+            <if expression="(vize * 40)/100 + (final * 60)/100 &gt;= 60">
+                <then>
+                    <output expression="&quot;Gectiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Kaldiniz&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
